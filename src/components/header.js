@@ -1,7 +1,6 @@
 import * as React from "react"
-// import PropTypes from "prop-types"
 import { Fragment } from "react"
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
 
 import { Disclosure, Menu, Transition } from "@headlessui/react"
 import { PaperAirplaneIcon, MenuIcon, XIcon } from "@heroicons/react/outline"
@@ -15,11 +14,6 @@ import { faPaperPlane } from "@fortawesome/free-solid-svg-icons"
 const navigation = [
   { name: "About", href: "#about", current: false },
   { name: "Projects", href: "#projects", current: false },
-  {
-    name: "Hire me",
-    href: "https://www.upwork.com/o/profiles/users/~01479af0bb7431cac2/",
-    current: false,
-  },
 ]
 
 function classNames(...classes) {
@@ -55,9 +49,9 @@ export default function Header() {
                 <div className="hidden sm:block sm:ml-6">
                   <div className="flex space-x-4">
                     {navigation.map(item => (
-                      <a
+                      <Link
                         key={item.name}
-                        href={item.href}
+                        to={item.href}
                         className={classNames(
                           item.current
                             ? "bg-gray-900 text-white"
@@ -67,7 +61,7 @@ export default function Header() {
                         aria-current={item.current ? "page" : undefined}
                       >
                         {item.name}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 </div>
@@ -110,9 +104,9 @@ export default function Header() {
           <Disclosure.Panel className="sm:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navigation.map(item => (
-                <a
+                <Link
                   key={item.name}
-                  href={item.href}
+                  to={item.href}
                   className={classNames(
                     item.current
                       ? "bg-gray-900 text-white"
@@ -122,7 +116,7 @@ export default function Header() {
                   aria-current={item.current ? "page" : undefined}
                 >
                   {item.name}
-                </a>
+                </Link>
               ))}
             </div>
           </Disclosure.Panel>
@@ -131,11 +125,3 @@ export default function Header() {
     </Disclosure>
   )
 }
-
-// Header.propTypes = {
-//   siteTitle: PropTypes.string,
-// }
-
-// Header.defaultProps = {
-//   siteTitle: ``,
-// }

@@ -11,25 +11,25 @@ const features = [
   {
     name: "Front-end development",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+      "Always staying updated, I've been building the last apps I worked on using React and Gatsby, and experimenting with Vue.",
     icon: CursorClickIcon,
   },
   {
     name: "Back-end development",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+      "Depending on the app, my choices for the backend are Node + Graphql, Express or Django.",
     icon: CloudIcon,
   },
   {
     name: "Native apps",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+      "Using React Native, I really enjoy developing and designing hybrid native apps. Also currently experimenting with Electron.",
     icon: DeviceMobileIcon,
   },
   {
     name: "Play tennis",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+      "Trained to become a pro in my teen years, I left the sport to dedicate myself to filmmaking. Life paths have changed, now I'm getting back to my favorite sport :)",
     icon: LogoutIcon,
   },
 ]
@@ -46,8 +46,9 @@ export default function About() {
             What I like to do
           </p>
           <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-            Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam
-            voluptatum cupiditate veritatis in accusamus quisquam.
+            I'm a self taught programmer that started out learning vanilla
+            Javascript and Python, and then moved on to explore different
+            frameworks
           </p>
         </div>
 
