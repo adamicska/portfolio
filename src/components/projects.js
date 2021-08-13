@@ -2,6 +2,7 @@ import * as React from "react"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithubAlt } from "@fortawesome/free-brands-svg-icons"
+import { faGlobe } from "@fortawesome/free-solid-svg-icons"
 
 const projects = [
   {
@@ -10,14 +11,16 @@ const projects = [
     stack: "Django + React.js",
     description:
       "Company management app to ease the life of building contractors. Has everything from inventory, payroll, accounting to sales, plus many reports.",
-    link: "#",
+    github: "#",
+    website: "",
   },
   {
     name: "Every Market Media",
     role: "Frontend Developer",
     stack: "Express.js + React.js",
     description: "Marketing data app with a big db for marketing agencies.",
-    link: "https://portal.everymarketmedia.com/login",
+    github: "https://portal.everymarketmedia.com/login",
+    website: "https://everymarketmedia.com",
   },
   {
     name: "Matchapp",
@@ -25,7 +28,8 @@ const projects = [
     stack: "Node.js + Graphql + React.js",
     description:
       "Currently under development, this app is designed to match tennis, and other raquet sport players at similar levels, so they can meet and play.",
-    link: "#",
+    github: "#",
+    website: "#",
   },
   {
     name: "Portfolio app",
@@ -33,7 +37,8 @@ const projects = [
     stack: "Gatsby.js",
     description:
       "Optimized app to work as my personal presentation/portfolio website.",
-    link: "https://github.com/adamicska/portfolio",
+    github: "https://github.com/adamicska/portfolio",
+    website: "https://adamicska.dev",
   },
 ]
 
@@ -97,11 +102,21 @@ export default function Projects() {
                       <dt className="text-sm font-medium text-gray-500"></dt>
                       <dd className="mt-1 sm:mt-0 sm:col-span-2">
                         <a
-                          href={project.link}
+                          href={project.github}
                           className=" p-1 rounded-full text-gray-600 hover:text-gray-900 focus:outline-none"
                         >
                           <FontAwesomeIcon
                             icon={faGithubAlt}
+                            className="mx-2"
+                            size="lg"
+                          />
+                        </a>
+                        <a
+                          href={project.website}
+                          className=" p-1 rounded-full text-gray-600 hover:text-gray-900 focus:outline-none"
+                        >
+                          <FontAwesomeIcon
+                            icon={faGlobe}
                             className="mx-2"
                             size="lg"
                           />
