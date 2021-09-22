@@ -136,19 +136,19 @@ export default function IndexPage() {
                       href="https://github.com/adamicska"
                       className="block px-3 py-2 ml-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
                     >
-                      <FontAwesomeIcon icon={faGithubAlt} size="lg" />
+                      <FontAwesomeIcon icon="faGithubAlt" size="lg" />
                     </a>
                     <a
                       href="https://stackoverflow.com/users/11724751/adamicska"
                       className="block px-3 py-2 ml-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
                     >
-                      <FontAwesomeIcon icon={faStackOverflow} size="lg" />
+                      <FontAwesomeIcon icon="faStackOverflow" size="lg" />
                     </a>
                     <a
                       href="https://t.me/adamicska"
                       className="block px-3 py-2 ml-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
                     >
-                      <FontAwesomeIcon icon={faPaperPlane} size="lg" />
+                      <FontAwesomeIcon icon="faPaperPlane" size="lg" />
                     </a>
                   </div>
                 </Popover.Panel>
@@ -169,8 +169,8 @@ export default function IndexPage() {
 
                 <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                   Freelance coder #Javascript and #Python. My favorite
-                  frameworks/librairies are #React and #Django. I am also a fan
-                  of #TailwindCSS.
+                  frameworks/librairies are #React, #Express and #Django. I am
+                  also a fan of #TailwindCSS & #Bootstrap.
                 </p>
                 <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                   <div className="rounded-md shadow">
