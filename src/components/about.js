@@ -29,7 +29,7 @@ const features = [
   {
     name: "Play tennis",
     description:
-      "Trained to become a pro in my teen years, I left the sport to dedicate myself to filmmaking. Now I'm getting back to my favorite sport :)",
+      "Trained to become a pro in my teen years, I left the sport to dedicate myself to filmmaking. Now I'm getting back to it :)",
     icon: LogoutIcon,
   },
 ]
