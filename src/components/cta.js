@@ -19,7 +19,7 @@ export default function Cta() {
           </div>
           <div className="ml-3 inline-flex rounded-md shadow">
             <a
-              href="https://t.me/adamicska"
+              href="https://t.me/janos77"
               className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50"
             >
               Get in touch

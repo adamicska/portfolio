@@ -11,7 +11,7 @@ const features = [
   {
     name: "Front-end development",
     description:
-      "Always staying updated, I've been building the last apps I worked on using React and Gatsby, and experimenting with Vue.",
+      "Always staying updated, I've been building the last apps I worked on using React and Gatsby.",
     icon: CursorClickIcon,
   },
   {
@@ -23,13 +23,13 @@ const features = [
   {
     name: "Native apps",
     description:
-      "Using React Native, I really enjoy developing and designing hybrid native apps. Also currently experimenting with Electron.",
+      "Using React Native, I really enjoy developing and designing hybrid native apps.",
     icon: DeviceMobileIcon,
   },
   {
     name: "Play tennis",
     description:
-      "Trained to become a pro in my teen years, I left the sport to dedicate myself to filmmaking. Life paths have changed, now I'm getting back to my favorite sport :)",
+      "Trained to become a pro in my teen years, I left the sport to dedicate myself to filmmaking. Now I'm getting back to my favorite sport :)",
     icon: LogoutIcon,
   },
 ]

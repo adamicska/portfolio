@@ -1,13 +1,13 @@
 import * as React from "react"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faGithubAlt } from "@fortawesome/free-brands-svg-icons"
+// import { faGithubAlt } from "@fortawesome/free-brands-svg-icons"
 import { faGlobe } from "@fortawesome/free-solid-svg-icons"
 
 const projects = [
   {
     name: "Bricklayer",
-    role: "Lead Developer",
+    role: "Fullstack Developer",
     stack: "Django + React.js",
     description:
       "Company management app to ease the life of building contractors. Has everything from inventory, payroll, accounting to sales, plus many reports.",
@@ -15,16 +15,8 @@ const projects = [
     website: "",
   },
   {
-    name: "Every Market Media",
-    role: "Frontend Developer",
-    stack: "Express.js + React.js",
-    description: "Marketing data app with a big db for marketing agencies.",
-    github: "https://portal.everymarketmedia.com/login",
-    website: "https://everymarketmedia.com",
-  },
-  {
     name: "Matchapp",
-    role: "Lead Developer",
+    role: "Fullstack Developer",
     stack: "Node.js + Graphql + React.js",
     description:
       "Currently under development, this app is designed to match tennis, and other raquet sport players at similar levels, so they can meet and play.",
@@ -32,13 +24,36 @@ const projects = [
     website: "#",
   },
   {
-    name: "Portfolio app",
+    name: "Every Market Media",
+    role: "Frontend Developer",
+    stack: "Express.js + React.js",
+    description: "Marketing data app for marketing agencies.",
+    github: "https://portal.everymarketmedia.com/login",
+    website: "https://portal.everymarketmedia.com/login",
+  },
+  {
+    name: "Michelle Richmond",
     role: "Fullstack Developer",
-    stack: "Gatsby.js",
-    description:
-      "Optimized app to work as my personal presentation/portfolio website.",
-    github: "https://github.com/adamicska/portfolio",
-    website: "https://adamicska.dev",
+    stack: "Django",
+    description: "Online courses app for Life Coach Michelle Richmond.",
+    github: "#",
+    website: "https://michellerichmond.com.au",
+  },
+  {
+    name: "EMM Website",
+    role: "Frontend Design & Dev",
+    stack: "Hubspot",
+    description: "Corporate website for Every Market Media.",
+    github: "#",
+    website: "https://www.everymarketmedia.com",
+  },
+  {
+    name: "Blanka Campbell",
+    role: "Fullstack Developer",
+    stack: "WordPress",
+    description: "Online courses app for Nutritionist Blanka Campbell.",
+    github: "#",
+    website: "https://blankacampbell.com/",
   },
 ]
 
@@ -101,8 +116,9 @@ export default function Projects() {
                     <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                       <dt className="text-sm font-medium text-gray-500"></dt>
                       <dd className="mt-1 sm:mt-0 sm:col-span-2">
-                        <a
+                        {/* <a
                           href={project.github}
+                          target="_blank"
                           className=" p-1 rounded-full text-gray-600 hover:text-gray-900 focus:outline-none"
                         >
                           <FontAwesomeIcon
@@ -110,9 +126,11 @@ export default function Projects() {
                             className="mx-2"
                             size="lg"
                           />
-                        </a>
+                        </a> */}
                         <a
                           href={project.website}
+                          target="_blank"
+                          rel="noreferrer"
                           className=" p-1 rounded-full text-gray-600 hover:text-gray-900 focus:outline-none"
                         >
                           <FontAwesomeIcon

@@ -8,12 +8,12 @@ import { Popover, Transition } from "@headlessui/react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { PaperAirplaneIcon, MenuIcon, XIcon } from "@heroicons/react/outline"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {
-  faGithubAlt,
-  faStackOverflow,
-} from "@fortawesome/free-brands-svg-icons"
-import { faPaperPlane } from "@fortawesome/free-solid-svg-icons"
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+// import {
+//   faGithubAlt,
+//   faStackOverflow,
+// } from "@fortawesome/free-brands-svg-icons"
+// import { faPaperPlane } from "@fortawesome/free-solid-svg-icons"
 
 import About from "../components/about"
 import Cta from "../components/cta"
@@ -22,6 +22,12 @@ import Projects from "../components/projects"
 const navigation = [
   { name: "About", href: "#about", current: false },
   { name: "Projects", href: "#projects", current: false },
+  { name: "Contact", href: "https://t.me/janos77", current: false },
+  {
+    name: "Hire me",
+    href: "https://www.upwork.com/o/profiles/users/~01479af0bb7431cac2/",
+    current: false,
+  },
 ]
 
 export default function IndexPage() {
@@ -75,20 +81,24 @@ export default function IndexPage() {
                       href="https://github.com/adamicska"
                       className="p-1 rounded-full text-gray-500 hover:text-gray-900 focus:outline-none"
                     >
-                      <FontAwesomeIcon icon={faGithubAlt} size="lg" />
+                      {/* <FontAwesomeIcon icon={faGithubAlt} size="lg" /> */}
                     </a>
-                    <a
+                    {/* <a
                       href="https://stackoverflow.com/users/11724751/adamicska"
                       className="p-1 rounded-full text-gray-500 hover:text-gray-900 focus:outline-none"
                     >
                       <FontAwesomeIcon icon={faStackOverflow} size="lg" />
-                    </a>
-                    <a
+                    </a> */}
+                    {/* <a
                       href="https://t.me/adamicska"
                       className="p-1 rounded-full text-gray-500 hover:text-gray-900 focus:outline-none"
                     >
-                      <FontAwesomeIcon icon={faPaperPlane} size="lg" />
-                    </a>
+                      <ChatAlt2Icon
+                        className="h-6 w-6 text-gray-500 hover:text-gray-900"
+                        aria-hidden="true"
+                      /> */}
+                    {/* <FontAwesomeIcon icon={faPaperPlane} size="lg" /> */}
+                    {/* </a> */}
                   </div>
                 </nav>
               </div>
@@ -132,7 +142,7 @@ export default function IndexPage() {
                         </a>
                       ))}
                     </div>
-                    <a
+                    {/* <a
                       href="https://github.com/adamicska"
                       className="block px-3 py-2 ml-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
                     >
@@ -149,7 +159,7 @@ export default function IndexPage() {
                       className="block px-3 py-2 ml-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
                     >
                       <FontAwesomeIcon icon="faPaperPlane" size="lg" />
-                    </a>
+                    </a> */}
                   </div>
                 </Popover.Panel>
               </Transition>
